@@ -32,9 +32,8 @@ $(function() {
     });
     
     //toggle button to check items off list when clicked
-    //unsure of why I had to eliminate the 'event' parameter from this function in order to make it work
     //event delegation to trigger event on click of shopping-item-toggle class button
-    $(".shopping-list").on("click", ".shopping-item-toggle", function() {
+    $(".shopping-list").on("click", ".shopping-item-toggle", function(event) {
         //variable for item being selected; closest selects higher li and then finds the item within that li with find
         let checkedItem = $(this).closest("li").find(".shopping-item");
         console.log(checkedItem);
