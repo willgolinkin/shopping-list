@@ -18,13 +18,13 @@ $(function() {
         //the answer has to be b/c we are still within the the form element, not ul
         $(".shopping-list").append(
             `<li>
-                 <span class="shopping-item">${addedItem}</span>
+                <span class="shopping-item">${addedItem}</span>
                 <div class="shopping-item-controls">
-                     <button class="shopping-item-toggle">
-                          <span class="button-label">check</span>
-                     </button>
-                     <button class="shopping-item-delete">
-                         <span class="button-label">delete</span>
+                    <button class="shopping-item-toggle">
+                        <span class="button-label">check</span>
+                    </button>
+                    <button class="shopping-item-delete">
+                        <span class="button-label">delete</span>
                     </button>
                 </div>
             </li>`
